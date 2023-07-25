@@ -304,12 +304,17 @@ footer {
   font-weight: normal;
 }
 
+.active-cs {
+  border-radius: 5px;
+  background-color: tomato;
+  color: black;
+}
+
 .form-select-contact-us {
   border: 1px solid tomato;
 }
 
 .form-select-contact-us::after {
-  color: tomato;
 }
 
 .form-select-contact-us:focus {
@@ -328,15 +333,17 @@ a > img:hover {
   transition: 0.5s;
 }
 
-.nav-item-cs {
-}
-
-.nav-item-cs > .nav-link {
+.nav-link-cs {
   background-color: transparent;
   color: white;
   box-shadow: 0 0 6px 2px rgba(255, 99, 71, 0.9);
   border-radius: 5px;
   font-size: 13px;
+}
+.nav-link-cs:hover {
+  color: tomato;
+  transition: 0.7s;
+  box-shadow: 0 0 8px 3px rgba(255, 99, 71, 0.9);
 }
 
 .fa-headset {
@@ -348,6 +355,29 @@ a > img:hover {
   box-shadow: 0 0 10px 2px rgba(255, 99, 71, 0.9);
 }
 
-.box-select select {
+.box-select > select {
   color: #636c72;
+}
+
+.box-select > select::after {
+  background-color: red;
+}
+
+option {
+  color: black;
+  background-color: tomato;
+}
+
+.option-selected {
+  background-color: white;
+  color: #636c72;
+}
+
+.message {
+  background-color: transparent;
+  max-width: 40%;
+  transition: ease-in-out;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 0 10px 2px rgba(255, 99, 71, 0.9);
 }
